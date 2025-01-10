@@ -21,6 +21,12 @@ class toDoListController extends Controller
         $newListItem->save();
         return redirect('/');
     }
+
+    public function markComplete($id)
+    {
+        Log::info($id);
+        return redirect('/');
+    }
 }
 
 

@@ -859,22 +859,35 @@
 {{--<body class="antialiased">--}}
 <div class="relative flex items-top justify-center">
     <div style="color: white">
-        <h1> todo list</h1><br>
+        <h1 class="text-center text-xl"> todo list</h1><br>
 
         @foreach($listItems as $listItem)
-            <p> Item: {{$listItem->name}}</p>
+            <div class="flex" style="align-items: center">
+                <p> Item: {{$listItem->name}}</p>
+
+                <form method="post" action="{{route('markComplete', $listItem->id)}}" accept-charset="UTF-8">
+                    {{csrf_field()}}
+                    <button type="submit"
+                            style="color: black; background-color: lightgray; padding: 1px 2px; border: none; border-radius: 2px; cursor: pointer; margin-left: 10px;"
+                            onmouseover="this.style.backgroundColor='white';"
+                            onmouseout="this.style.backgroundColor='lightgrey';">
+                        Mark complete
+                    </button>
+                </form>
+
+                <br><br>
+            </div>
         @endforeach
 
         <form method="post" action="{{ route('saveItem') }}" accept-charset="UTF-8">
             {{csrf_field()}}
             <label for="listItem">New ToDo item</label> <br>
-            <input type="text" name="listItem" style="color: black;"> <br>
+            <input type="text" name="listItem" style="color: black;"> <br><br>
             <button
                 style="color: black; background-color: lightgrey; padding: 5px 10px; border: none; border-radius: 3px; cursor: pointer;"
                 onmouseover="this.style.backgroundColor='grey';" onmouseout="this.style.backgroundColor='lightgrey';">
                 Save item
             </button>
-        </form>
         </form>
     </div>
 </div>
