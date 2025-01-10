@@ -864,7 +864,12 @@
             {{csrf_field()}}
             <label for="listItem">New ToDo item</label> <br>
             <input type="text" name="listItem" style="color: black;"> <br>
-            <button>Save item</button>
+            <button
+                style="color: black; background-color: lightgrey; padding: 5px 10px; border: none; border-radius: 3px; cursor: pointer;"
+                onmouseover="this.style.backgroundColor='grey';" onmouseout="this.style.backgroundColor='lightgrey';">
+                Save item
+            </button>
+        </form>
         </form>
     </div>
 </div>
