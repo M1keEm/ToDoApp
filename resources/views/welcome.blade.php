@@ -860,6 +860,11 @@
 <div class="relative flex items-top justify-center">
     <div style="color: white">
         <h1> todo list</h1><br>
+
+        @foreach($listItems as $listItem)
+            <p> Item: {{$listItem->name}}</p>
+        @endforeach
+
         <form method="post" action="{{ route('saveItem') }}" accept-charset="UTF-8">
             {{csrf_field()}}
             <label for="listItem">New ToDo item</label> <br>

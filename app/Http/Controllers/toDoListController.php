@@ -8,6 +8,11 @@ use Illuminate\Support\Facades\Log;
 
 class toDoListController extends Controller
 {
+    public function index()
+    {
+        return view('welcome', ['listItems' => ListItem::all()]);
+    }
+
     public function saveItem(Request $request)
     {
         $newListItem = new ListItem;
