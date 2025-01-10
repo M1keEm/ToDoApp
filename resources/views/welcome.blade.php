@@ -860,10 +860,12 @@
 <div class="relative flex items-top justify-center">
     <div style="color: white">
         <h1> todo list</h1><br>
-
-        <label for="listItem">New ToDo item</label> <br>
-        <input type="text" name="listItem"> <br>
-        <button>Save item</button>
+        <form method="post" action="{{ route('saveItem') }}" accept-charset="UTF-8">
+            {{csrf_field()}}
+            <label for="listItem">New ToDo item</label> <br>
+            <input type="text" name="listItem"> <br>
+            <button>Save item</button>
+        </form>
     </div>
 </div>
 </body>
