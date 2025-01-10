@@ -24,9 +24,9 @@ class toDoListController extends Controller
 
     public function markComplete($id)
     {
-        Log::info($id);
         $listItem = ListItem::find($id);
-        Log::info($listItem);
+        $listItem->is_complete = 1;
+        $listItem->save();
         return redirect('/');
     }
 }
