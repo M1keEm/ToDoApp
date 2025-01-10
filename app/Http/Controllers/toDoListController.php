@@ -10,7 +10,7 @@ class toDoListController extends Controller
 {
     public function index()
     {
-        return view('welcome', ['listItems' => ListItem::all()]);
+        return view('welcome', ['listItems' => ListItem::where('is_complete', 0)->get()]);
     }
 
     public function saveItem(Request $request)
