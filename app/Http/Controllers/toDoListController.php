@@ -3,12 +3,18 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\ListItem;
+use Illuminate\Support\Facades\Log;
 
 class toDoListController extends Controller
 {
-    public function saveItem()
+    public function saveItem(Request $request)
     {
-        return view('welcome');
+        $newListItem = new ListItem;
+        $newListItem->name = $request->listItem;
+        $newListItem->is_complete = 0;
+        $newListItem->save();
+        return redirect('/');
     }
 }
 
