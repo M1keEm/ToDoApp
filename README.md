@@ -1,6 +1,21 @@
 # ToDoApp
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat&logo=laravel&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white)
+![Blade](https://img.shields.io/badge/Blade-FF2D20?style=flat&logo=laravel&logoColor=white)
 
 A simple and intuitive To-Do application built with Laravel. This project helps you manage your tasks efficiently with features like task creation, updating, and deletion.
+
+## Table of Contents
+
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
+- [Contact](#contact)
 
 ## Features
 
@@ -46,6 +61,17 @@ A simple and intuitive To-Do application built with Laravel. This project helps 
 
     Open your browser and navigate to http://localhost:8000.
 
+## Usage
+
+- **Register/Login:** Create an account or log in to an existing one.
+
+- **Create Tasks:** Add new tasks with a title and description.
+
+- **Update Tasks:** Edit existing tasks to update their details.
+
+- **Delete Tasks:** Remove tasks that are no longer needed.
+
+
 ## Contributing
 
 Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
@@ -58,13 +84,9 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 
 Please ensure your code follows the existing style and includes appropriate documentation.
 
----
-
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
 
 ## Acknowledgments
 
@@ -72,11 +94,9 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 - [Bootstrap](https://getbootstrap.com/) for the responsive design components.
 
----
-
 ## Contact
 
 If you have any questions or suggestions, feel free to reach out:
 
 - **MikeEm** - [My Github](https://github.com/m1keem)
-- **Project Link** - [Repository](https://github.com/m1keem/tictactoe)
+- **Project Link** - [Repository](https://github.com/m1keem/todoapp)
